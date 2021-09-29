@@ -4,9 +4,9 @@ body{
     padding: 0;
     font-family:"Roboto Condensed";
 }
-/********************
-******* Common*******
-*********************/
+/***********************************************************************************
+******* Common******************
+*************************************************************************************/
 .container{
     max-width: 1150px;
     margin: 0 auto;
@@ -22,12 +22,30 @@ body{
     font-size: 16px;
     padding: 12px 25px;
 }
-/********************************
+.heading-section{
+    padding-top: 30px;
+    /* margin-top: 60px; */
+}
+.heading-section h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: #41464b;
+}
+.heading-section span{
+    display: block;
+    width: 35px;
+    height: 4px;
+    background-color: #34c6d3;
+    margin:20px auto;
+}
+/****************************************************************************************
 *************Header*************
-********************************/
+****************************************************************************************/
 header{
     background: url(../images/bg-home.jpg);
     height: 100vh;
+    background-attachment: fixed;
 }
 nav{
     height: 80px;
@@ -70,4 +88,45 @@ nav .navigation a{
     color: #64707b;
     background: #fff;
     border-radius: 10px;
+}
+
+/*********************************************************************************
+* ***********Services*******************
+***********************************************************************************/
+.services-section{
+    height: 100vh;
+/*
+if .heading-section used margin-top 60 then to 
+avoid scrolling, minus 60 from viewport.
+If padding-top used then no need calc.
+*/
+/* height: calc(100vh - 60px); */
+}
+.services{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+    gap: 2rem;
+}
+.service{
+    display: flex;
+    align-items: center;
+}
+.service-icon i{
+    color: #34c6d3;
+    padding: 15px;
+    margin-right: 30px;
+    transition: 0.6s linear;
+}
+.service:hover .service-icon i {
+    color: #fff;
+    background: #34c6d3;
+}
+.service-info h3{
+    text-transform: uppercase;
+    color: #41464b;
+    font-weight:400;
+}
+.service-info p{
+    color:#64707b;
 }
