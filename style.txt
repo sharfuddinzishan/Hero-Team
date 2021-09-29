@@ -1,8 +1,8 @@
 Default
 
 Font Family 		: Roboto Condensed
-Cyan 			: #34c6d3 (Buttons, Icons, Links & Backgrounds)
-Steel Gray		: #41464b (Heading)
+Cyan 			    : #34c6d3 (Buttons, Icons, Links & Backgrounds)
+Steel Gray		    : #41464b (Heading)
 Blue Bayoux 		: #64707b (Paragraphs)
-White 			: #fff (Text with Black Background)
-Black 			: #000
+White 			    : #fff (Text with Black Background)
+Black 			    : #000
