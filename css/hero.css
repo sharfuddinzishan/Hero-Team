@@ -12,6 +12,10 @@ body{
     margin: 0 auto;
     padding: 0 40px;
 }
+.container-fluid{
+    width: 90%;
+    padding: 0 5%;
+}
 .btn{
     background: transparent;
     border: 2px solid;
@@ -23,7 +27,7 @@ body{
     padding: 12px 25px;
 }
 .heading-section{
-    padding-top: 30px;
+    padding-top: 60px;
     /* margin-top: 60px; */
 }
 .heading-section h3{
@@ -52,6 +56,9 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(75, 86, 94);
 }
 .logo img{
     max-width: 200px;
@@ -84,7 +91,7 @@ nav .navigation a{
     color:#fff;
     transition: 0.3s;
 }
-.btn:hover{
+.btn-white:hover{
     color: #64707b;
     background: #fff;
     border-radius: 10px;
@@ -129,4 +136,46 @@ If padding-top used then no need calc.
 }
 .service-info p{
     color:#64707b;
+}
+/*********************************************************************************
+* ***********About*******************
+***********************************************************************************/
+.about-section{
+    height: 100vh;
+    background: url(../images/bg-about.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about{
+    background-color: #fff;
+    clip-path: polygon(0 0, 40% 0, 56% 100%, 0 100%);
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+}
+.about .heading-section{
+    margin: 0 60px;
+    width: 40%;
+}
+.about .heading-section h3{
+    text-align: left;
+}
+.about .heading-section span{
+    margin-left: 0;
+}
+.about .heading-section p{
+    color: #64707b;
+    font-size: 18px;
+    padding-right: 6rem;
+}
+.btn-cyan{
+    color:#34c6d3;
+    border-color: #34c6d3;
+    transition: 0.3s;
+}
+.btn-cyan:hover{
+    color: #fff;
+    background: #34c6d3;
+    border-radius: 10px;
 }
